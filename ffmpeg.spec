@@ -43,7 +43,7 @@
 Summary:	Hyper fast MPEG1/MPEG4/H263/RV and AC3/MPEG audio encoder
 Name:		ffmpeg
 Version:	2.1.4
-Release:	1%{?extrarelsuffix}
+Release:	2%{?extrarelsuffix}
 %if %{build_plf}
 License:	GPLv3+
 %else
@@ -313,32 +313,40 @@ export LDFLAGS="%{ldflags}"
 %exclude %{_datadir}/ffmpeg/examples
 
 %files -n %{libavcodec}
+%doc README
 %{_libdir}/libavcodec.so.%{major}*
 
 %files -n %{libavdevice}
+%doc README
 %{_libdir}/libavdevice.so.%{major}*
 
 %files -n %{libavfilter}
+%doc README
 %{_libdir}/libavfilter.so.%{filtermajor}*
 
 %files -n %{libavformat}
 %{_libdir}/libavformat.so.%{major}*
 
 %files -n %{libavutil}
+%doc README
 %{_libdir}/libavutil.so.%{avumajor}*
 
 %files -n %{libpostproc}
+%doc README
 %{_libdir}/libpostproc.so.%{ppmajor}*
 
 %files -n %{libswresample}
+%doc README
 %{_libdir}/libswresample.so.%{swrmajor}*
 
 %if %{with swscaler}
 %files -n %{libswscale}
+%doc README
 %{_libdir}/libswscale.so.%{swsmajor}*
 %endif
 
 %files -n %{devname}
+%doc README doc/*.html
 %{_includedir}/libavcodec
 %{_includedir}/libavdevice
 %{_includedir}/libavformat
@@ -375,5 +383,6 @@ export LDFLAGS="%{ldflags}"
 %{_datadir}/ffmpeg/examples
 
 %files -n %{statname}
+%doc README doc/*.html
 %{_libdir}/*.a
 
