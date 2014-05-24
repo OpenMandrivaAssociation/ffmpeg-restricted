@@ -17,7 +17,7 @@
 
 #####################
 # Hardcode PLF build
-%define build_plf 0
+%define build_plf 1
 #####################
 
 %{?_with_plf: %{expand: %%global build_plf 1}}
