@@ -42,8 +42,8 @@
 
 Summary:	Hyper fast MPEG1/MPEG4/H263/RV and AC3/MPEG audio encoder
 Name:		ffmpeg
-Version:	2.2.4
-Release:	1%{?extrarelsuffix}
+Version:	2.1.4
+Release:	3%{?extrarelsuffix}
 %if %{build_plf}
 License:	GPLv3+
 %else
@@ -53,9 +53,9 @@ Group:		Video
 Url:		http://ffmpeg.org/
 Source0:	http://ffmpeg.org/releases/%{name}-%{version}.tar.bz2
 Patch1:		ffmpeg-2.1-dlopen-faac-mp3lame-opencore-x264-xvid.patch
-#Patch2:		ffmpeg-1.0.1-time.h.patch
+Patch2:		ffmpeg-1.0.1-time.h.patch
 # http://ffmpeg.org/pipermail/ffmpeg-devel/2013-October/149616.html
-#Patch3:         ffmpeg-2.1-atrac3plus.patch
+Patch3:         ffmpeg-2.1-atrac3plus.patch
 
 BuildRequires:	texi2html
 BuildRequires:	yasm
@@ -385,4 +385,3 @@ export LDFLAGS="%{ldflags}"
 %files -n %{statname}
 %doc README doc/*.html
 %{_libdir}/*.a
-
