@@ -2,5 +2,6 @@ removed_sources:
   ffmpeg-2.5.2.tar.bz2: e167475426e8edf55601e79d3367c2210baa5f11
   ffmpeg-2.5.3.tar.bz2: 160d53a0d6b8df18336fac7f068c390ac2d34cef
   ffmpeg-2.5.4.tar.bz2: e7d0bab14e82876762531a883c6b48918631d48c
-sources:
   ffmpeg-2.6.1.tar.bz2: dfcd13e7c3e65a59cbe4cab85718ae84da824c5b
+sources:
+  ffmpeg-2.6.2.tar.bz2: 65470c9b967485f72f81758a7bad44cf7a1763db
