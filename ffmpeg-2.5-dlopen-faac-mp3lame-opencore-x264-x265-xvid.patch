@@ -159,7 +159,7 @@
 +#define aacDecoder_DecodeFrame dl_aacDecoder_DecodeFrame
 +#define aacDecoder_GetStreamInfo dl_aacDecoder_GetStreamInfo
 +#define aacDecoder_Close dl_aacDecoder_Close
-+#define FDKAAC_LIB "libfdk-aac.so.1"
++#define FDKAAC_LIB "libfdk-aac.so.0"
 +static int loadLibFdkAac(AVCodecContext *avctx);
 +static int loadLibFdkAac(AVCodecContext *avctx) {
 +	void *libfdkaac = NULL;
@@ -224,7 +224,7 @@
 +#define aacEncEncode dl_aacEncEncode
 +#define aacEncInfo dl_aacEncInfo
 +#define aacEncClose dl_aacEncClose
-+#define FDKAAC_LIB "libfdk-aac.so.1"
++#define FDKAAC_LIB "libfdk-aac.so.0"
 +
 +static int loadLibFdkAac(AVCodecContext *avctx);
 +static int loadLibFdkAac(AVCodecContext *avctx) {
