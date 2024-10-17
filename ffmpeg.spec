@@ -57,7 +57,7 @@ License:	GPLv3+
 License:	GPLv2+
 %endif
 Group:		Video
-Url:		http://ffmpeg.org/
+Url:		https://ffmpeg.org/
 Source0:	http://ffmpeg.org/releases/%{name}-%{version}.tar.bz2
 Patch1:		ffmpeg-2.5-dlopen-faac-mp3lame-opencore-x264-x265-xvid.patch
 Patch2:		ffmpeg-1.0.1-time.h.patch
